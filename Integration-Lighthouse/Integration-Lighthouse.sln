@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration-Lighthouse", "Integration-Lighthouse.csproj", "{5F8F52C2-1173-4899-AC13-65EC15ED2A64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration-Lighthouse", "Integration-Lighthouse.csproj", "{A0D0623C-65DC-47E7-B1CC-F8FDCAD126E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F8F52C2-1173-4899-AC13-65EC15ED2A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F8F52C2-1173-4899-AC13-65EC15ED2A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F8F52C2-1173-4899-AC13-65EC15ED2A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F8F52C2-1173-4899-AC13-65EC15ED2A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D0623C-65DC-47E7-B1CC-F8FDCAD126E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D0623C-65DC-47E7-B1CC-F8FDCAD126E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D0623C-65DC-47E7-B1CC-F8FDCAD126E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D0623C-65DC-47E7-B1CC-F8FDCAD126E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {04E645BA-2178-4EFF-AE8C-ACEC11346A3F}
+		SolutionGuid = {6E3310EE-3515-40E6-8216-4FBDE8DE66ED}
 	EndGlobalSection
 EndGlobal
