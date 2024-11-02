@@ -1,5 +1,7 @@
 # Mojie is amazing!
 Once upon a time in a small town, there lived a cat named Whiskers who had an unusual habit: he loved coffee! Every morning, as his owner sipped her hot cup of java, Whiskers would sit by her side, dreaming of the magical elixir that filled the air with its rich aroma.
+![image](https://github.com/user-attachments/assets/57805424-68eb-4a91-9497-289473d20e82)
+
 
 ## Whiskers’ Coffee Quest
 
