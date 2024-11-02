@@ -1,0 +1,79 @@
+/* App.css */
+
+.app {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  font-family: Arial, sans-serif;
+}
+
+.nav-list {
+  flex: 1; /* Flex-grow to take one part of the space */
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto; /* Enable scrolling if content is too long */
+  border-right: 1px solid #ddd;
+}
+
+.content-area {
+  flex: 3; /* Flex-grow to take three parts of the space */
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling for content */
+}
+
+.content-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 100%; /* Full height for the content box */
+  overflow-y: auto; /* Enable scrolling for long content */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  text-align: center;
+}
+
+.nav-list h4,
+.content-area h4 {
+  margin-bottom: 10px; /* Space below headings */
+}
+
+.search-input {
+  width: calc(100% - 4px); /* Same width as buttons, accounting for padding */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.nav-list ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-list li {
+  margin-bottom: 8px; /* Space below each list item */
+}
+
+.nav-list button {
+  width: 100%; /* Full width for buttons */
+  padding: 8px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  text-align: left; /* Align text to the left */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-list button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.welcome-message {
+  font-size: 1.2em; /* Larger font for welcome message */
+  color: #555; /* Dark gray color for text */
+  padding: 20px; /* Padding around the message */
+}
