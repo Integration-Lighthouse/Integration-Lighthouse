@@ -73,7 +73,7 @@ function App() {
                 class="user-profile"
                 href="https://github.com/Integration-Lighthouse/Integration-Lighthouse/blob/main/README.md"
                 target="_blank"
-                rel="author"
+                rel="noreferrer"
               >
                 Collaborate
               </a>
