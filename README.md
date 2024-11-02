@@ -1,1 +1,1 @@
-# Integration-Lighthouse
+# Integration Lighthouse
