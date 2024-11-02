@@ -13,6 +13,8 @@ function App() {
   const articles = require.context("./Articles", true);
   const articleList = articles.keys().map((article) => articles(article));
 
+  console.log(selectedIndex);
+
   // Fetch first lines of all articles on component mount
   useEffect(() => {
     const fetchFirstLines = async () => {
