@@ -1,5 +1,4 @@
-# The Adventures of a Caffeinated Cat
-
+# Mojie is amazing!
 Once upon a time in a small town, there lived a cat named Whiskers who had an unusual habit: he loved coffee! Every morning, as his owner sipped her hot cup of java, Whiskers would sit by her side, dreaming of the magical elixir that filled the air with its rich aroma.
 
 ## Whiskers’ Coffee Quest
