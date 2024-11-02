@@ -56,7 +56,7 @@ function App() {
         <div class="app-header-logo">
           <div class="logo">
             <span class="logo-icon">
-              <img src={logo} />
+              <img src={logo} alt="logo" />
             </span>
             <h1 class="logo-title">
               <span>Integration</span>
@@ -69,7 +69,14 @@ function App() {
           <div class="app-header-spacer"></div>
           <div>
             <button class="user-profile">
-            <a class="user-profile" href="https://github.com/Integration-Lighthouse/Integration-Lighthouse/blob/main/README.md" target="_blank">Collaborate</a>
+              <a
+                class="user-profile"
+                href="https://github.com/Integration-Lighthouse/Integration-Lighthouse/blob/main/README.md"
+                target="_blank"
+                rel="author"
+              >
+                Collaborate
+              </a>
             </button>
           </div>
         </div>
@@ -95,7 +102,8 @@ function App() {
               <ul className="article-list">
                 {filteredArticles.map((firstLine, index) => (
                   <li className="article-list-item">
-                    <button className="article-list-button"
+                    <button
+                      className="article-list-button"
                       onClick={() =>
                         handleArticleClick(firstLines.indexOf(firstLine))
                       }
