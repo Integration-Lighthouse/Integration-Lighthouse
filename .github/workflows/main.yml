@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy to Github Pages
         run: |
-          git config --global user.name 'Integration Lighthouse'
-          git config --global user.email 'integration.lighthouse@gmail.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          npm run deploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
