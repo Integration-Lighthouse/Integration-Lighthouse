@@ -1,25 +1,45 @@
-# The Mystery of the Missing Sock
+# Är du en ny utvecklare och osäker på hur du sätter upp Logic App lokalt? Här är en enkel steg-för-steg guide från Daniel
 
-In the bustling town of Socksville, a peculiar phenomenon was taking place. Socks were mysteriously disappearing from laundry baskets, and the residents were in a tizzy! Who or what could be behind this mystery?
+Att sätta upp lokal utveckling för Logic App Standard kan kännas lite överväldigande, särskilt om du är ny i verktyget. Men oroa dig inte! Daniel har satt ihop en enkel guide som hjälper dig att komma igång snabbt och smidigt.
 
-## The Investigation Begins
+Så här gör du:
+Öppna Lokal Designer
+För att öppna den lokala designern bör följande steg följas.
 
-Detective Polka Dot, a seasoned sock investigator, was called in to solve the case. Armed with his magnifying glass and a keen sense of smell, he began interviewing the townsfolk.
+1. Se till att den senaste versionen av Azure Functions Core Tools är installerad på din lokala maskin.
 
-### Suspects Galore
+2. Se till att du har Azurite-tjänsterna installerade på din lokala maskin.
 
-1. **The Laundry Monster**: Legend had it that a furry creature lived in the washing machine, gobbling up socks.
-2. **The Sock Thief**: A mischievous raccoon was rumored to be stealing socks at night.
-3. **The Dryer Goblin**: Some believed that a goblin lurked in dryers, making socks disappear into another dimension.
+3. Installera Azure Logic App (Standard) tillägget i VS Code.
 
-## A Twist in the Tale
+4. Verifiera att följande inställningar är som följer:
 
-As Detective Polka Dot followed the clues, he discovered something shocking: the missing socks were actually hiding in the depths of the dryer! They weren’t stolen; they were just cozying up in a warm spot.
+		a. Azure Logic Apps Standard: Auto Runtime Dependencies Path bör vara inställt på blank.
+![image](https://github.com/user-attachments/assets/70d06f94-6c90-434d-b722-1b2a0586dab4)
 
-### The Great Sock Reunion
+		b. Azure Logic Apps Standard: Auto Runtime Dependencies Validation and Installation bör vara inaktiverad.
+![image](https://github.com/user-attachments/assets/a306af6b-81a7-40c1-a70b-268aaecfad7c)
 
-With the mystery solved, the townspeople rejoiced! They pulled out their favorite socks and celebrated with a “Sock Party.” 
+		c. Azure Logic Apps Standard: Auto Start Design Time bör vara inaktiverad.
+![image](https://github.com/user-attachments/assets/8bcb9107-cd15-4eb3-a9c3-2f34441d466c)
 
-## Lesson Learned
+		d. Azure Logic Apps Standard: Dotnet Binary Path Det bör ställas in på dotnet.
+![image](https://github.com/user-attachments/assets/92979a82-c030-415b-b818-c49f41bbf1f6)
 
-Sometimes, what seems like a problem is just a misunderstanding. And never underestimate the power of a cozy dryer!
+		e. Azure Logic Apps Standard: Func Core Tools Binary Path Det bör ställas in på func.
+![image](https://github.com/user-attachments/assets/c93f5e51-2a89-498b-b06d-23037b7d3c6d)
+
+6. Från en terminal, kör följande kommando:
+	func host start --port 8000
+	Portparametern är avgörande och bör ställas in på 8000 (åttatusen), eftersom det är den port som designtiden försöker ansluta till.
+
+![image](https://github.com/user-attachments/assets/412e747e-55cd-4345-91f1-99d8df4d56a1)
+
+8. Högerklicka på ditt arbetsflöde och välj "Open Designer" från snabbmenyn.
+   
+![image](https://github.com/user-attachments/assets/330272b7-9924-4fa3-ad82-6da18eafc837)
+
+Redigera ditt arbetsflöde så mycket du vill!
+Observera att värden måste vara igång under denna tid, annars kommer designern att sluta fungera.
+
+Kudos till: Daniel Åslund, som alltid hjälper andra och gör det enklare för dem att arbeta med nya verktyg.
