@@ -1,29 +1,26 @@
-# The Tale of the Singing Vegetables
+#  The Tale of the Singing Vegetables
 
-In a magical garden where sunlight kissed every leaf, there lived a group of vegetables that could sing! From carrots to cabbages, each had a unique voice, and every night, they held concerts under the stars.
+Om du är trött på att mocka dummy-data i Postman, kan du använda det inbyggda paketet som effektiviserar processen. Det finns även möjlighet att utföra olika typer av tester, såsom prestandatester. Börja med att organisera dina förfrågningar i en samling, kör dem och justera inställningarna under fliken "Performance" för att matcha ditt testscenario. Testresultaten ger dig insikter i hur dina reuests presterar.
 
-## The Starry Night Concert
+Testprocess
+Skapa en samling – Börja med att organisera dina förfrågningar i en samling eller mer specifika mappar.
 
-One evening, the vegetables decided to host the biggest concert of the year. They rehearsed for weeks, preparing to dazzle their friends and the moonlight with their tunes.
+![image](https://github.com/user-attachments/assets/f0b2df18-6d72-4196-a062-9ea5a6abda06)
 
-### Meet the Band
+Kör samlingen – När du har skapat en samling/mapp kan du välja att köra den. Du kan också välja specifika förfrågningar som du vill testa. Detta inkluderar möjligheten att göra stresstester på valda förfrågningar.
 
-- **Carla Carrot**: The lead singer with a voice as bright as her orange hue.
-- **Benny Broccoli**: The bass player who could shake the ground with his deep, resonant tones.
-- **Lettie Lettuce**: The soft-spoken backup singer, harmonizing beautifully with Carla.
+![image](https://github.com/user-attachments/assets/ef601aa5-d984-4e4e-9bfe-024719cd38d3)
 
-## The Grand Performance
+Anpassa inställningar – Under fliken "Performance" kan du justera inställningarna för att passa ditt testscenario och sedan köra testet.
 
-As the sun set, the garden came alive with music. The vegetables sang songs of love, friendship, and the beauty of nature. The audience, a mix of curious critters and enchanted plants, swayed to the rhythm.
+![image](https://github.com/user-attachments/assets/d8401d39-e71e-4d97-8f96-90cc1e52dc4a)
 
-### A Surprise Guest
+Resultaten visas efter att testet körts och ger dig insikter i hur din förfrågan presterar under olika förhållanden.
 
-Just when the concert reached its peak, a wise old owl flew in, drawn by the melodious sounds. He perched on a branch and added his hoots to the mix, creating a magical blend of voices.
+![image](https://github.com/user-attachments/assets/69ad84f2-035b-4051-b62b-db1341e855e3)
 
-## The End of the Show
+Om du vill använda variabler i Postman för att enkelt skapa dynamisk data som UUIDs, tidsstämplar och andra exempelvärden, finns det en praktisk lista du kan använda. Här är en länk till variabellistan i Postman:
 
-After the final song, the garden erupted in applause. The singing vegetables became famous, attracting visitors from far and wide, proving that even the most unlikely of performers could bring joy to the world.
+[Use dynamic variables to return randomly generated data | Postman Learning Center](https://learning.postman.com/docs/tests-and-scripts/write-scripts/variables-list/) 
 
-### The Moral of the Story
-
-Everyone has a talent, no matter how small. Never be afraid to sing your own song!
+Kudos till: Mojtaba Rezaei, som är en drivkraft för att hjälpa andra utvecklare genom att dela sina insikter och praktiska lösningar
