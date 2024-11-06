@@ -1,4 +1,4 @@
-# rött på APIMstandardfel? Så här får du full kontroll med <on-error>
+# Trött på APIMstandardfel? Så här får du full kontroll med <on-error>
 
 Det började med ett välbekant problem för alla som använder Azure API Management (APIM) – de standardiserade felmeddelandena. När något går fel får du snygga men vaga meddelanden som gör det svårt att förstå vad som egentligen hände. För en utvecklare som vill ha tydliga svar och spårbarhet kan det vara otroligt frustrerande.
 
