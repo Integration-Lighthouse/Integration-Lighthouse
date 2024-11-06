@@ -1,4 +1,4 @@
-#  The Tale of the Singing Vegetables
+#  Mocka dummy-data i Postman
 
 Om du är trött på att mocka dummy-data i Postman, kan du använda det inbyggda paketet som effektiviserar processen. Det finns även möjlighet att utföra olika typer av tester, såsom prestandatester. Börja med att organisera dina förfrågningar i en samling, kör dem och justera inställningarna under fliken "Performance" för att matcha ditt testscenario. Testresultaten ger dig insikter i hur dina reuests presterar.
 
