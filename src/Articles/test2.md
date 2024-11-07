@@ -22,6 +22,6 @@ Men denna grundläggande förbättring togs ännu längre av en annan utvecklare
 ![image](https://github.com/user-attachments/assets/580b78b0-425e-4638-97f9-6f62b7415455)
 
 
-Kudos till: Mojtaba Rezaei och Sebastian Wesselhoff
+#Kudos till: Mojtaba Rezaei och Sebastian Wesselhoff
 
 Denna lösning är inskickad av Mojtaba Rezaei och Sebastian Wesselhoff, två utvecklare som har hittat ett sätt att optimera felhanteringen i APIM. Stort tack för att ni delar med er!
