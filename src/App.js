@@ -5,11 +5,14 @@ import "./App.css";
 import logo from "./logo.jpg";
 import MarkDown from "markdown-to-jsx";
 
+import Popup from "./components/popup";
+
 function App() {
   const [content, setContent] = useState("");
   const [firstLines, setFirstLines] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [popUp, setPopUp] = useState(false);
 
   const articles = require.context("./Articles", true);
   const articleList = articles.keys().map((article) => articles(article));
@@ -63,8 +66,16 @@ function App() {
               <span>Lighthouse</span>
             </h1>
           </div>
+          <div class= "serach-icon">
+            <button class= "serach-button" onClick={() => setPopUp(true)}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            </button>
+          </div>
         </div>
-        <div class="app-header-spacer"></div>
+        <div class="app-header-spacer">
+        </div>
         <div class="app-header-actions">
           <div class="app-header-spacer"></div>
           <div>
@@ -75,7 +86,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Collaborate
+                Publish article
               </a>
             </button>
           </div>
@@ -128,6 +139,43 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Popup trigger={popUp} setTrigger ={setPopUp} >
+        <div class="app-body-navigation-popup">
+          <nav class="navigation-popup">
+            <div class="form-group-popup field-popup">
+              <input
+                type="input"
+                class="form-field-popup"
+                placeholder="Search titles"
+                value={searchTerm}
+                onChange={handleSearchChange}
+                name="search-popup"
+                id="search-popup"
+              />
+              <label for="search-popup" class="form-label-popup">
+                Search titles...
+              </label>
+            </div>
+            <div class="list-popup">
+              <ul className="article-list-popup">
+                {filteredArticles.map((firstLine, index) => (
+                  <li className="article-list-item-popup">
+                    <button
+                      className="article-list-button-popup"
+                      onClick={() =>
+                        handleArticleClick(firstLines.indexOf(firstLine))
+                      }
+                    >
+                      {firstLine || "Loading..."}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </Popup>
     </div>
   );
 }
