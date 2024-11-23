@@ -56,6 +56,22 @@ a {
  }
 }
 
+.serach-button {
+  display: flex;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--c-text-tertiary);
+  transition: 0.25s ease;
+}
+@media (min-width: 1200px) {
+  .serach-button{
+    display: none;
+ }
+}
+
+
 .app-header-spacer{
   border-bottom: 1px solid var(--c-gray-600);
 }
@@ -101,6 +117,7 @@ a {
 
 .app-header-logo{
   border-bottom: 1px solid var(--c-gray-600);
+  display: flex;
 }
 
 .app-header-actions {
@@ -148,6 +165,12 @@ a {
   color: var(--c-text-tertiary);
 }
 
+.serach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app-body {
   height: 100%;
   display: flex;
@@ -172,13 +195,37 @@ a {
   justify-content: space-between;
 }
 
+.app-body-navigation-popup {
+  min-width: 16vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media (max-width: 1200px) {
   .app-body-navigation {
     display: none;
  }
 }
+
+.menu-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Additional styling */
+}
+
  /* ----------------- Search Input ---------------- */
 .form-group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-group-popup {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
@@ -204,6 +251,29 @@ a {
 }
 
 .form-field:placeholder-shown ~ .form-label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form-field-popup {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form-field-popup::placeholder {
+  color: transparent;
+}
+
+.form-field-popup:placeholder-shown ~ .form-label-popup {
   font-size: 1.3rem;
   cursor: text;
   top: 20px;
@@ -236,6 +306,32 @@ a {
   font-weight: 700;
 }
 
+.form-label-popup {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form-field-popup:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--text-secondary), var(--text-secondary));
+  border-image-slice: 1;
+}
+
+.form-field-popup:focus ~ .form-label-popup {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
  /* ----------------- Search Input ---------------- */
 
 
@@ -269,6 +365,34 @@ a {
   padding-top: 0px;
 }
 
+.list-popup {
+ border-radius: 5px;
+ scroll-snap-type: y mandatory;
+ overscroll-behavior-y: contain;
+ overflow-x: hidden;
+ overflow-y: auto;
+}
+
+.article-list-popup {
+ margin: 0;
+ padding: 0;
+ list-style-position: inside;
+}
+
+.article-list-popup ::marker {
+ content: '→';
+}
+
+.article-list-item-popup {
+ padding-top: 10px;
+ scroll-snap-align: start;
+}
+
+.article-list-item-popup:first-child {
+ border: 0;
+ padding-top: 0px;
+}
+
  /* ----------------- Article List ---------------- */
 
 .navigation {
@@ -290,6 +414,29 @@ a {
 }
 
 .navigation .article-list-button:hover {
+  transform: translateX(4px);
+  color: var(--text-secondary);
+}
+
+.navigation-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--c-text-tertiary);
+}
+.navigation-popup .article-list-button-popup {
+  color: var(--c-gray-300);
+  transition: 0.25s ease;
+  background-color: transparent;
+  text-align: left;
+  border: 0px ;
+  margin-top: 4px;
+}
+.navigation-popup .article-list-button-popup * {
+  transition: 0.25s ease;
+}
+
+.navigation-popup .article-list-button-popup:hover {
   transform: translateX(4px);
   color: var(--text-secondary);
 }
