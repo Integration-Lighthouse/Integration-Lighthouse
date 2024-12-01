@@ -349,6 +349,7 @@ a {
   margin: 0;
   padding: 0;
 	list-style-position: inside;
+  max-width: 15vw;
 }
 
 .article-list ::marker {
@@ -356,7 +357,7 @@ a {
 }
 
 .article-list-item {
-  padding-top: 10px;
+  padding-top: 15px;
   scroll-snap-align: start;
 }
 
@@ -400,6 +401,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   color: var(--c-text-tertiary);
+  max-width: 15vw;
 }
 .navigation .article-list-button {
   color: var(--c-gray-300);
@@ -447,6 +449,8 @@ a {
   /* padding-left: 5px; */
   height: 100%; /* Full height for the content box */
   overflow-y: auto; /* Enable scrolling for long content */
+  max-width: 75dvw;
+  text-wrap: wrap;
 }
 
 
