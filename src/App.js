@@ -86,7 +86,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Publish article
+                Publicera Artikel
               </a>
             </button>
           </div>
